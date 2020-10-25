@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "261368577122",
+    "firebase_url": "https://morseme-93da2.firebaseio.com",
+    "project_id": "morseme-93da2",
+    "storage_bucket": "morseme-93da2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261368577122:android:4ae7fcc4c64df52916e53b",
+        "android_client_info": {
+          "package_name": "com.example.brailleME"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261368577122-7v3p7d23un1dtpmd13nohnt0pm6onlbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA96IJ76RrlhMyDHixkEl39S5iN1iYvUrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261368577122-7v3p7d23un1dtpmd13nohnt0pm6onlbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
