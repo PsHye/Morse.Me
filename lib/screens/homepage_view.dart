@@ -24,11 +24,18 @@ class _HomePageState extends State<HomePage> {
       children: [
         Padding(
           padding: EdgeInsets.only(
-            left: MediaQuery.of(context).size.width * 0.05,
-            right: MediaQuery.of(context).size.width * 0.05,
-            top: MediaQuery.of(context).size.height*0.02
+              left: MediaQuery.of(context).size.width * 0.05,
+              right: MediaQuery.of(context).size.width * 0.05,
+              top: MediaQuery.of(context).size.height * 0.02),
+          child: Center(
+            child: Text(
+              'WELCOME to the Text Translator',
+              style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontSize: MediaQuery.of(context).size.height * 0.03,
+                  fontWeight: FontWeight.bold),
+            ),
           ),
-          child: Center(child: Text('WELCOME to the Text Translator', style: TextStyle(fontFamily: 'Montserrat', fontSize: MediaQuery.of(context).size.height*0.03, fontWeight: FontWeight.bold),),),
         ),
         Padding(
           padding: EdgeInsets.only(
@@ -79,7 +86,8 @@ class _HomePageState extends State<HomePage> {
                     child: Text('Translate'),
                   ),
                 ),
-                Card(elevation: 5,
+                Card(
+                  elevation: 5,
                   clipBehavior: Clip.antiAlias,
                   child: Column(
                     children: [
@@ -146,12 +154,31 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.05),
-          child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
+          padding:
+              EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.05),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-            Column(children: [Text('Did you know')],),
-            Column(children: [Image.network('http://enciclopedia.us.es/images/e/ef/Samuel_Morse.jpg', height: MediaQuery.of(context).size.height*0.2,)],),
-          ],),
+              Column(
+                children: [
+                  Text('DID YOU KNOW?', style: TextStyle(color: Colors.black, fontFamily: 'Montserrat', fontSize: 15, fontWeight: FontWeight.bold),),
+                  Padding(
+                    padding: EdgeInsets.only(left:MediaQuery.of(context).size.width*0.01),
+                    child: Text(
+                            'Descripcion'),
+                  )
+                ],
+              ),
+              Column(
+                children: [
+                  Image.network(
+                    'http://enciclopedia.us.es/images/e/ef/Samuel_Morse.jpg',
+                    height: MediaQuery.of(context).size.height * 0.15,
+                  )
+                ],
+              ),
+            ],
+          ),
         )
       ],
     ));

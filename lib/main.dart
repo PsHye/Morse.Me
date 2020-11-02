@@ -1,6 +1,7 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:brailleME/Screens/about_view.dart';
 import 'package:brailleME/Screens/knowledge_view.dart';
+import 'package:brailleME/screens/game_view.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'Screens/homepage_view.dart';
@@ -101,6 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             HomePage(),
             KnowledgePage(),
+            GamePage(),
             AboutPage(),
             SettingsPage()
           ],
@@ -137,6 +139,17 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               icon: Icon(
                 MdiIcons.book,
+                color: Colors.white,
+              )),
+          BottomNavyBarItem(
+              activeColor: Colors.white,
+              title: Text(
+                'GAME',
+                style: TextStyle(
+                    fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
+              ),
+              icon: Icon(
+                MdiIcons.gamepad,
                 color: Colors.white,
               )),
           BottomNavyBarItem(
